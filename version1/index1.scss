@@ -1,0 +1,238 @@
+@import url("../masterStyles/menu.css");
+@import url("../masterStyles/footer.css");
+
+@font-face {
+  font-family: "peyda";
+  src: url("../font/Peyda/Peyda-Medium.ttf");
+}
+
+$ColorBlue1: #0f1934;
+$ColorBlue2: #16244b;
+$ColorBlue3: #162b64;
+$ColorWormy1: #a18581;
+$ColorWormy2: #ba9992;
+$ColorWormy3: #d7b1a6;
+$ColorBrown: #b3a19d;
+$ColorGray1: #cccacb;
+$ColorGray2: #f5f5f5;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+section {
+  padding-top: 2rem;
+  font-family: "peyda";
+   width: 100vw;
+  height: 130vh;
+  background-image: url("../images/About\ Us\ \(2\).jpg");
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  background-size: 100% 100%;
+  color: #f5f5f5;
+  font-size: 1rem;
+  .container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 100px;
+    top: 10px;
+    div {
+      padding: 10px 0;
+    }
+  }
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    .div-1 {
+      font-size: 2rem;
+    }
+    .underline {
+      width: 120px;
+      height: 5px;
+      background-color: $ColorWormy1;
+    }
+  }
+}
+
+ 
+@media screen and (max-width: 500px) {
+  .All-menu {
+    right: 5px;
+    z-index: 10;
+     
+    .menu {
+      font-size: 1.8rem;
+    }
+
+    .sidebar {
+       opacity: 100%;
+         ul{
+           position: relative;
+          right: 7%;
+        }
+        li {
+        padding: 10px 5px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  section {
+    width: 100%;
+    height: 120vh;
+    background-position: center ;
+    background-size:200% 100%;
+    color: #f5f5f5;
+    font-size: .8rem;
+  
+     .container {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+       display: grid;
+      grid-template-columns: 300px;
+      justify-content: center;
+      // margin: auto;
+      // padding: auto;
+      position: static;
+      // grid-gap: 0 50px;
+      // div {
+      //   padding: 10px 0;
+      // }
+    }
+    .header-text {
+      width: 100%;
+      //  display: flex;
+      // flex-direction: column;
+      display: grid;
+      grid-template-columns: 100px;
+      justify-content: center;
+      align-items: center;
+   
+      .div-1 {
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+      .underline {
+        position: relative;
+        top: -1rem;
+         width: 90px;
+        height: 3px;
+      }
+    }
+  }
+
+  footer {
+    padding: 20px 0;
+
+    flex-direction: column;
+
+    .div-footer {
+      height: auto;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      grid-gap: 1px;
+
+      i {
+        font-size: 2rem;
+        user-select: none;
+        color: $ColorGray2;
+        &:hover {
+          color: $ColorBlue3;
+        }
+      }
+      .text-footer {
+        font-size: 1.3rem;
+      }
+    }
+
+    .stone {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width:501px) and  (max-width:880px){
+   footer {
+    height: 100%;
+   font-family: "peyda";
+    background-color: $ColorBlue1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+   
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  
+    .div-footer {
+      height: 40vh;
+      width: 100vw;
+      display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      
+      i {
+        font-size: 1.8rem;
+         }
+       .text-footer {
+        font-size: 1rem;
+       }
+    }
+     span{
+      font-size: .9rem;
+     }
+    
+    .stone {
+      display: none;
+     }
+  }
+  
+}
+@media screen and (max-height:600px){
+  section {
+    width: 100%;
+    height: 150vh;
+    background-position: center ;
+    background-size:100% 100%;
+   
+     .container {
+      // margin: 0;
+      padding: 0 0 10rem 0;
+      width: 100vw;
+       display: grid;
+      grid-template-columns: 500px;
+      justify-content: center;
+       position: static;
+     }
+    .header-text {
+      width: 100%;
+       display: grid;
+      grid-template-columns: 100px;
+      justify-content: center;
+      align-items: center;
+   
+      .div-1 {
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+      .underline {
+        position: relative;
+        top: -1rem;
+         width: 90px;
+        height: 3px;
+      }
+    }
+  }
+
+}

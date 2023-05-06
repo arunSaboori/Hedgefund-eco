@@ -1,0 +1,80 @@
+.All-menu {
+    position: fixed;
+    right: 10px;
+    z-index: 10;
+  }
+  .All-menu .menu {
+    position: fixed;
+    right: 0px;
+    user-select: none;
+    cursor: pointer;
+    float: right;
+    color: #ba9992;
+    margin: 1rem;
+    z-index: 15;
+ 
+  }
+  .All-menu .menu:active {
+    font-size: 2.3rem;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .sidebar {
+    font-family: "peyda";
+    z-index: 4;
+    right: -250px;
+    text-align: center;
+    position: fixed;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    background-size: cover;
+    opacity: 40%;
+  }
+  .sidebar ul {
+    margin: 3rem;
+  }
+  .sidebar li {
+    list-style-type: none;
+    padding: 20px 5px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+  .sidebar li:hover {
+    border-bottom: 3px solid black;
+    transition: 0.4s ease;
+  }
+
+
+  
+  .sidebar a {
+    color: #0f1934;
+  }
+
+
+
+  .sidebar a:hover {
+    color: #cccacb;
+    padding-right: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+
+
+
+  #check {
+    display: none;
+  }
+  
+  label #btn,
+  label #cancel {
+    position: relative;
+    z-index: 5;
+  }
+  
+  #check:checked ~ .sidebar {
+    right: 0;
+  }
+   

@@ -1,0 +1,847 @@
+@import url("../masterStyles/menu.css");
+@font-face {
+  font-family: "peyda";
+  src: url("../font/Peyda/Peyda-Bold.ttf");
+}
+$ColorBlue1: #0f1934;
+$ColorBlue2: #16244b;
+$ColorBlue3: #162b64;
+$ColorWormy1: #a18581;
+$ColorWormy2: #ba9992;
+$ColorWormy3: #d7b1a6;
+$ColorBrown: #b3a19d;
+$ColorGray1: #cccacb;
+$ColorGray2: #f5f5f5;
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  margin: auto;
+  padding: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+ }
+
+header {
+  background: url("../images/1.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 0px 0px 20rem 0;
+  background-attachment: scroll;
+  .header-div {
+    display: flex;
+    min-height: 30vh;
+    flex-direction: column;
+    padding: 15px 0 0 40px;
+    li {
+      padding: 20px 0px;
+    }
+  }
+   .text-1 {
+    color: $ColorWormy1;
+    font-size: 3rem;
+    font-family: "peyda";
+    user-select: none;
+  }
+  .text-2 {
+    color: $ColorGray2;
+    font-family: "peyda";
+    font-size: 1.5rem;
+  }
+ }
+section {
+  min-height: 60vh;
+  background-image: url("../images/5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .all-section-div {
+    display: flex;
+    grid-gap: 2rem;
+  }
+  .circle {
+    background-color: $ColorWormy1;
+    border-radius: 100%;
+    width: 7px;
+    height: 7px;
+    margin: 0 2px;
+  }
+  .t-1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .ul-1,
+  .ul-2 {
+    max-height: 45vh;
+    background-color: $ColorBlue2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    padding: 50px 10px;
+    box-shadow: 7px 10px 10px 0px black;
+    &:hover {
+      transform: translateY(-20px);
+      transition: 0.4s ease;
+      cursor: pointer;
+    }
+
+    .serv-1,
+    .serv-2 {
+      ul {
+        margin-top: 4rem;
+      }
+    }
+    .free,
+    .vip {
+      width: 25px;
+      margin-left: 7px;
+      margin-top: -2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      background-color: $ColorWormy2;
+      padding: 20px 120px;
+      border-radius: 25px;
+      font-family: "peyda";
+      color: $ColorBlue2;
+      font-size: 2rem;
+      user-select: none;
+      box-shadow: inset -3px 3px 20px -3px black;
+    }
+    .t-1 {
+      font-family: "peyda";
+       color: $ColorGray2;
+    }
+    .t-2 {
+      font-family: "peyda";
+      color: $ColorGray1;
+    }
+    .t-3 {
+      color: $ColorWormy2;
+    }
+  }
+}
+
+
+
+main {
+  font-family: "peyda";
+  max-height: 40vh;
+  background-image: url("../images/3.jpg");
+  background-size: cover;
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .main-ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .div-ul {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/44.png");
+    background-size: 100%;
+    max-width: 8.5%;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    margin: auto 30px;
+  }
+  .icon {
+    display: block;
+    font-size: 5rem;
+  }
+  ul {
+    margin-top: -70px;
+
+    li {
+      padding: 1rem;
+    }
+    span {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+aside {
+  font-family: "peyda";
+  background-image: url("../images/4.jpg");
+  background-size: cover;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .images {
+    margin: 4rem 0 0 4rem;
+    img {
+      width: 100px;
+      height: 100px;
+      margin-top: auto;
+    }
+    ul {
+      display: flex;
+      padding: 0.5rem;
+    }
+    .tt-1 {
+      p {
+        display: block;
+        font-size: 1.5rem;
+        color: $ColorGray2;
+      }
+      span {
+        color: $ColorGray1;
+      }
+    }
+  }
+  .aside-ul-1 {
+    position: relative;
+    margin: -5rem 0 0 5rem;
+    p {
+      width: 40vw;
+      z-index: 12;
+      border-bottom: 2px solid white;
+      font-size: 3rem;
+      color: $ColorWormy1;
+    }
+  }
+}
+
+footer {
+  background-color: $ColorBlue1;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  min-width: 100vw;
+  height: auto;
+  font-family: "peyda";
+  display: flex;
+  flex-direction: column;
+
+  .div-footer {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    i {
+      font-size: 2rem;
+      user-select: none;
+      color: $ColorGray2;
+      &:hover {
+        color: $ColorBlue3;
+      }
+    }
+    span {
+      color: $ColorGray2;
+    }
+    .text-footer {
+      font-size: 1rem;
+      color: $ColorWormy2;
+    }
+  }
+
+  .nav-footer {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .nav-footer-ul-1 {
+      margin-left: 100px;
+    }
+
+    p {
+      color: $ColorGray1;
+      font-size: 1rem;
+    }
+    a {
+      background-color: $ColorGray2;
+      color: $ColorBlue2;
+      border-radius: 10px;
+      padding: 15px 15px;
+      // font-weight: 700;
+      margin-right: 100px;
+      opacity: 90%;
+      box-shadow: inset -3px 3px 20px -3px black;
+
+      &:hover {
+        background-color: $ColorBlue3;
+        transition: 0.2s;
+      }
+    }
+    span {
+      color: $ColorGray2;
+      font-size: 1.5rem;
+    }
+  }
+
+  .stone {
+    height: 80px;
+    width: 2px;
+    background-color: $ColorGray2;
+  }
+}
+@media screen and (max-width: 500px) {
+  .All-menu {
+    right: 5px;
+    z-index: 10;
+    .menu {
+      font-size: 1.8rem;
+    }
+
+    .sidebar {
+      opacity: 100%;
+
+      li {
+        padding: 10px 5px;
+        font-size: 15px;
+      }
+    }
+  }
+
+
+
+
+  header {
+    max-height: 10vh;
+    max-width: 100vw;
+    background-position-x: 65%;
+    background-position-y: center;
+    background-size: 100% cover;
+    .header-div {
+      position: relative;
+      bottom: 20px;
+      margin: 0;
+      display: flex;
+      margin-right: 15px;
+      justify-content: center;
+      text-align: center;
+      margin-right: 2rem;
+
+      li {
+        padding: 15px;
+      }
+      a {
+        font-size: 0.9rem;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+    .text-1 {
+      font-size: clamp(1rem , 1.2rem , 1.5rem);
+    }
+    .text-2 {
+      font-size: 0.8rem;
+    }
+  }
+
+
+  // section {
+  //   max-height: 100vh;
+ 
+  //   div {
+  //     padding: 0px;
+  //     margin: 0px;
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     justify-content: center;
+  //    }
+  //   .ul-1,
+  //   .ul-2 {
+  //     max-height: 40vh;
+  //     padding: 50px 14px;
+  //     font-size: 0.8rem;
+  //     position: relative;
+  //     bottom: 3rem;
+  //     .serv-1,
+  //     .serv-2 {
+  //       ul {
+  //         margin: 25px 0px;
+  //        }
+  //     }
+  //     .free,
+  //     .vip {
+  //       width: 50px;
+  //       padding: 10px 90px;
+  //       margin-left: 0px;
+  //       ul {
+  //         display: flex;
+  //         justify-content: center;
+  //       }
+  //     }
+  //   }
+  // }
+
+  main {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    .main-ul {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 2rem;
+    }
+    .div-ul {
+      width: 100vw;
+      margin: 0px auto;
+      display: flex;
+      justify-content: center;
+      width: 8.5%;
+      padding: 4rem;
+    }
+    .icon {
+      font-size: 2rem;
+    }
+    ul {
+      margin-top: -50px;
+
+      li {
+        padding: 0rem;
+      }
+      span {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  aside {
+    background-image: url("../images/home2.jpg");
+    margin: 0;
+    padding: 5rem 0;
+    background-position-x: 80%;
+    background-size: 100% 100%;
+
+    .images {
+      margin: 0px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+      }
+      .tt-1 {
+        p {
+          font-size: 1.3rem;
+        }
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+    .aside-ul-1 {
+      margin: 0;
+      p {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        font-size: 2rem;
+        border-bottom: none;
+      }
+    }
+  }
+
+  footer {
+    background-size: cover;
+    .nav-footer {
+      width: 100vw;
+      height: 40vh;
+      flex-wrap: wrap;
+      text-align: center;
+      .nav-footer-ul-1 {
+        margin: 0px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+      a {
+        padding: 10px 10px;
+        margin: 0px;
+      }
+      span {
+        font-size: 1.5rem;
+      }
+    }
+
+    .stone {
+      display: none;
+    }
+
+    .div-footer {
+      height: 40vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .All-menu {
+    .menu {
+      font-size: 1.8rem;
+    }
+
+    .sidebar {
+      opacity: 60%;
+
+      li {
+        font-size: 15px;
+      }
+    }
+  }
+  header {
+    height: 47vh;
+    .header-div {
+      padding: 120px 0 0 30px;
+      margin: 0px;
+      display: flex;
+      margin-right: 15px;
+      justify-content: center;
+      margin-right: 2rem;
+    }
+  }
+
+  section {
+    height: 100%;
+    .all-section-div {
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 1rem;
+      justify-content: center;
+      // margin-bottom: 10rem;
+      position: relative;
+      bottom: 4rem;
+    }
+
+    .ul-1,
+    .ul-2 {
+      margin: 1rem 0;
+      height: 36vh;
+      background-size: cover;
+      border-radius: 50px;
+      padding: 50px 10px;
+      box-shadow: 7px 10px 10px 0px black;
+      &:hover {
+        transform: translateY(-20px);
+        transition: 0.4s ease;
+        cursor: pointer;
+      }
+
+      .serv-1,
+      .serv-2 {
+        ul {
+          margin-top: 4rem;
+        }
+      }
+      .free,
+      .vip {
+        width: 25px;
+        margin-left: 7px;
+        margin-top: -2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: $ColorWormy2;
+        padding: 15px 120px;
+        border-radius: 25px;
+        font-family: "peyda";
+        color: $ColorBlue2;
+        font-size: 2rem;
+        user-select: none;
+        box-shadow: inset -3px 3px 20px -3px black;
+      }
+      .t-1 {
+        font-family: "peyda";
+        color: $ColorGray2;
+      }
+      .t-2 {
+        font-family: "peyda";
+        color: $ColorGray1;
+      }
+      .t-3 {
+        color: $ColorWormy2;
+      }
+    }
+  }
+  main {
+    font-family: "peyda";
+    height: 40vh;
+    background-image: url("../images/3.jpg");
+    background-size: cover;
+    padding: 5rem 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .main-ul {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .div-ul {
+      display: flex;
+      justify-content: center;
+      background-image: url("../images/44.png");
+      background-size: 100%;
+      width: 8.5%;
+      background-repeat: no-repeat;
+      padding: 6rem;
+      margin: 10px 30px;
+    }
+    .icon {
+      display: block;
+      font-size: 5rem;
+    }
+    ul {
+      margin-top: -70px;
+
+      li {
+        padding: 1rem;
+      }
+      span {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  main {
+    height: 15vh;
+    background-size: cover;
+
+    .main-ul {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .div-ul {
+      display: flex;
+      justify-content: center;
+      width: 8.5%;
+      padding: 3rem;
+      margin: -19px auto;
+    }
+    .icon {
+      font-size: 2.4rem;
+    }
+    ul {
+      margin-top: -50px;
+
+      li {
+        padding: 1rem;
+      }
+      span {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+  aside {
+    .images {
+      .tt-1 {
+        p {
+          font-size: 1.3rem;
+        }
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+    .aside-ul-1 {
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  footer {
+    .div-footer {
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        font-size: 0.8rem;
+      }
+      .text-footer {
+        font-size: 1.1rem;
+      }
+    }
+
+    .nav-footer {
+      p {
+        font-size: 0.8rem;
+      }
+      a {
+        margin-right: 20px;
+        opacity: 90%;
+        font-size: 0.7rem;
+      }
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    .stone {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  section {
+    height: 100%;
+    .all-section-div {
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 2rem;
+      position: relative;
+      bottom: 4rem;
+    }
+
+    .ul-1,
+    .ul-2 {
+      margin: 1rem 0;
+      height: auto;
+      background-size: cover;
+      border-radius: 50px;
+      padding: 50px 10px;
+
+      .serv-1,
+      .serv-2 {
+        ul {
+          margin-top: 4rem;
+        }
+      }
+      .free,
+      .vip {
+        width: 25px;
+        margin-left: 7px;
+        margin-top: -2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: $ColorWormy2;
+        padding: 15px 120px;
+        border-radius: 25px;
+        font-family: "peyda";
+        color: $ColorBlue2;
+        font-size: 2rem;
+        user-select: none;
+        box-shadow: inset -3px 3px 20px -3px black;
+      }
+      .t-1 {
+        font-family: "peyda";
+      }
+      .t-2 {
+        font-family: "peyda";
+      }
+      .t-3 {
+        color: $ColorWormy2;
+      }
+    }
+  }
+
+  main {
+    height: 100%;
+    padding: 2rem 0;
+    margin: 0px;
+
+    .main-ul {
+      width: 100vw;
+      display: flex;
+      padding-top: 1rem;
+    }
+    .div-ul {
+      width: 100vw;
+      margin: 0px auto;
+      display: flex;
+      justify-content: center;
+      width: 8.5%;
+      padding: 3rem;
+    }
+    .icon {
+      font-size: 2rem;
+    }
+    ul {
+      margin-top: -30px;
+
+      li {
+        padding: 0rem;
+      }
+      span {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  footer {
+    .nav-footer {
+      p {
+        font-size: 0.9rem;
+      }
+      a {
+        margin-right: 20px;
+        opacity: 90%;
+        font-size: 0.8rem;
+      }
+      span {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1201px) {
+  section {
+    .all-section-div {
+      display: flex;
+      grid-gap: 4rem;
+      position: relative;
+      bottom: 3rem;
+    }
+  }
+}
+@media screen and (max-height: 600px) {
+  section {
+    height: 100vh;
+    .all-section-div {
+      display: flex;
+      grid-gap: 2rem;
+    }
+
+    .ul-1,
+    .ul-2 {
+      height: 75vh;
+
+      .serv-1,
+      .serv-2 {
+        ul {
+          margin-top: 2.5rem;
+        }
+      }
+    }
+  }
+}

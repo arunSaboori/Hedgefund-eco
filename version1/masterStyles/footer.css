@@ -1,0 +1,40 @@
+footer {
+    height: 100%;
+    font-family: "peyda";
+    background-color: #0f1934;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .div-footer {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .div-footer i {
+    font-size: 2rem;
+    user-select: none;
+    color: #f5f5f5;
+  }
+  footer .div-footer i:hover {
+    color: #162b64;
+  }
+  footer .div-footer span {
+    color: #f5f5f5;
+  }
+  footer .div-footer .text-footer {
+    font-size: 1.3rem;
+    color: #ba9992;
+  }
+  footer .stone {
+    height: 80px;
+    width: 2px;
+    background-color: #f5f5f5;
+  }
+  
